@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function CardBig(props) {
     return (
         <>
-        {props.prod && (
+        {props.prods && (
             <div>
                 {props.prods.map((prods, id) => (
                     <div key={id} className='cardBig'>
