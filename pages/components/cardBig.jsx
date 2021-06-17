@@ -4,8 +4,7 @@ import Link from 'next/link';
 export default function CardBig(props) {
     return (
         <>
-        {props.prods && (
-            <div>   
+            <div>
                 {props.prods.map((prods, id) => (
                     <div key={id} className='cardBig'>
                         <div className='cardBig_hero'>
@@ -30,9 +29,9 @@ export default function CardBig(props) {
                                 <Card prods={prods.promotion} />
                             </div>
                         )}
-                        <h1 className='cardBig_h1'>Services</h1>
                         {prods.services && (
                             <div className='cardBig_services'>
+                                <h1 className='cardBig_h1'>Services</h1>
                                 {prods.services.map((services, id) => (
                                     <div key={id} className='cardBig_service'>
                                         <div className='cardBig_img'>
@@ -62,7 +61,6 @@ export default function CardBig(props) {
                     </div>
                 ))}
             </div>
-        )}
         </>
     );
 }

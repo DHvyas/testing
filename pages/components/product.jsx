@@ -14,13 +14,11 @@ export default function Product(props) {
                 <div className={styles.prod_col}>
                     <div className={styles.prod_desc}>{props.desc}</div>
                     <h1>Duration :</h1>
-                    {props.duration && (
                     <div className={styles.prod_dur}>
                         {props.duration.map((duration, id) => (
                             <button key={id}>{duration}</button>
                         ))}
                     </div>
-                    )}
                     <div className={styles.prod_price}>
                         <h1>Price : </h1>
                         {props.price}

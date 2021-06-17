@@ -9,7 +9,6 @@
     */
     --navbar-height: 7.5vh;
 }
-
 body {
     font-family: 'Lexend', sans-serif;
     background-image: url(../public/images/bg.png);
@@ -91,13 +90,12 @@ body {
     display: flex;
 }
 .cardBig_services {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 90%;
-    justify-content: space-around;
+    display: flex;
     flex-wrap: wrap;
 }
 .cardBig_service {
+    width: 40%;
+    display: block;
     margin: 10% 2.5% 5% 5%;
     background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0% 0%
         no-repeat padding-box;
@@ -156,7 +154,9 @@ body {
         margin: auto 12.5vw auto 12.5vw;
         width: 75vw;
     }
-
+    .sideactive {
+        width: 30vw;
+    }
     .herorow {
         display: inline-flex;
         align-items: center;
@@ -189,9 +189,9 @@ body {
         top: 0 !important;
         left: -30% !important;
     }
-    /* #sidebar {
+    #sidebar {
         background: #141414ef 0% 0% no-repeat padding-box;
-    } */
+    }
 
     .cardBig {
         display: flex;
@@ -207,13 +207,15 @@ body {
         max-height: 350px;
     }
     .cardBig_h1 {
-        width: 72%;
-        margin-left: auto;
+        width: 70%;
     }
     .cardBig_services {
-        grid-template-columns: 60% 60%;
+        width: 75%;
+        margin-left: auto;
     }
-
+    .cardBig_service {
+        width: 25%;
+    }
     .cardBig_desc {
         font-size: 12px;
         font-weight: lighter;
@@ -250,13 +252,5 @@ body {
         max-width: 10%;
         left: 0px !important;
         top: -50% !important;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .cardBig_services {
-        grid-template-columns: 30% 30% 30%;
-        margin: unset;
-        margin-left: auto;
     }
 }
