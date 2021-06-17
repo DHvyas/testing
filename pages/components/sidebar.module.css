@@ -1,0 +1,22 @@
+.sidebarRight {
+    right: 0;
+}
+.sidebarLeft {
+    left: 0;
+}
+
+.sidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #141414ef 0% 0% no-repeat padding-box;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 10001;
+}
+
+.children {
+    height: 100%;
+}

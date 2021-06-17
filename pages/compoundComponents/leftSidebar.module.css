@@ -1,0 +1,74 @@
+.sidebar1 {
+    display: inline-flex;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    padding-left: 10%;
+    font-size: 22px;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #707070;
+}
+.sidebar1 button {
+    margin-left: auto;
+    margin-right: 10%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+}
+.sidebar2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    width: 90%;
+    height: 40%;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #707070;
+}
+.sidebar2 a {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+.sidebar3 {
+    padding: 10%;
+    display: inline-flex;
+    width: 90%;
+    height: 25%;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #707070;
+}
+.sidebar3 p {
+    font-size: 16px;
+}
+.sidebar4 {
+    padding: 10%;
+    display: inline-flex;
+    width: 90%;
+    height: 25%;
+    padding-left: 10%;
+}
+/* All Navbar Related Classes END */
+@media only screen and (min-width: 768px) {
+    .sidebar1,
+    .sidebar2,
+    .sidebar3 {
+        border: none;
+    }
+    .sidebar1 {
+        height: 15%;
+    }
+    .sidebar2 {
+        height: 50%;
+    }
+    .sidebar2 a {
+        font-size: 30px;
+    }
+}

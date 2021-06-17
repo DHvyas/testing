@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+
+:root {
+    /*We define all the variables here*/
+
+    /* 
+        Navbar Height is used to derive the height of the rest of the content
+        and the navbar too.
+    */
+    --navbar-height: 7.5vh;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-image: url(../public/images/bg.png);
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Classes */
+.main-container {
+    max-width: 864px;
+    width: 80vw;
+    margin: auto;
+}
+
+.hero {
+    height: calc(100vh - var(--navbar-height));
+    /* margin-top: auto; */
+    overflow: -moz-hidden-unscrollable;
+    overflow-y: hidden;
+}
+/* Layout Classes END */
+
+/* All Card Related Classes */
+.herodiv {
+    display: flex;
+    background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0% 0%
+        no-repeat padding-box;
+    padding: 3% 0 3% 0;
+    margin: 10vh 20px 4.9vh 20px;
+    color: white;
+    border: thin solid rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+}
+.herodiv_img {
+    width: 30%;
+    overflow: visible;
+}
+.herodiv_img > div {
+    overflow: visible !important;
+}
+.herodiv_img img {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    top: -60% !important;
+}
+.herodiv_col {
+    width: auto;
+    margin: auto auto auto 2rem;
+}
+.hero_name {
+    margin: 5% 0 5% 0;
+    font-size: 21px;
+}
+.hero_desc {
+    margin: 5% 0 5% 0;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.herodiv_col img {
+    margin: 15% 0 15% 0;
+}
+.cardBig {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0% 0%
+        no-repeat padding-box;
+    padding: 3% 0 3% 0;
+    margin: 10vh 20px 4.9vh 20px;
+    border-radius: 5px;
+    border: thin solid rgba(255, 255, 255, 0.04);
+}
+.cardBig_hero {
+    display: flex;
+}
+.cardBig_services {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cardBig_service {
+    margin: 10% 2.5% 5% 5%;
+    background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0% 0%
+        no-repeat padding-box;
+    border-radius: 5px;
+    border: thin solid rgba(255, 255, 255, 0.04);
+}
+.cardBig_img {
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+}
+.cardBig_img > div {
+    overflow: visible !important;
+}
+.cardBig_img img {
+    margin: auto;
+    top: -30% !important;
+}
+.cardBig_desc {
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+.cardBig_name {
+    font-size: 23px;
+}
+.cardBig_h1 {
+    font-size: 23px;
+    font-weight: normal;
+    padding-left: 5%;
+    width: 100%;
+}
+.cardBig_options {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: transparent;
+    width: 90%;
+    margin: 2.5% auto;
+    font-weight: lighter;
+}
+.cardBig_options > div {
+    padding: 2.5% 2.5%;
+    width: 70%;
+    margin: 2.5% auto;
+    max-height: 50px;
+    border: 2px solid #ffffff15;
+    border-radius: 5px;
+}
+
+/* All Card Related Classes END */
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    .list {
+        margin: auto 12.5vw auto 12.5vw;
+        width: 75vw;
+    }
+
+    .herorow {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 90%;
+        width: 100%;
+        margin: auto;
+    }
+    .herodiv {
+        flex-direction: column;
+        flex: 1 0 auto;
+        width: 16%;
+        max-height: none;
+        height: 60%;
+        margin-left: 5%;
+        background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0%
+            0% no-repeat padding-box;
+        border: 3px solid #ffffff1a;
+        border-radius: 5px;
+    }
+    .herodiv_img {
+        width: 100%;
+    }
+    .herodiv_img img {
+        border-radius: 5px;
+        width: 30vh !important;
+        height: 30vh !important;
+        top: 0 !important;
+        left: -30% !important;
+    }
+    /* #sidebar {
+        background: #141414ef 0% 0% no-repeat padding-box;
+    } */
+
+    .cardBig {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+        margin: 5% auto;
+    }
+    .cardBig_hero {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 25%;
+        max-height: 350px;
+    }
+    .cardBig_h1 {
+        width: 72%;
+        margin-left: auto;
+    }
+    .cardBig_services {
+        grid-template-columns: 60% 60%;
+    }
+
+    .cardBig_desc {
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    .cardBig_options {
+        height: 100%;
+        width: 70%;
+        background: transparent;
+        font-size: 14px;
+    }
+    .cardBig_options > div {
+        padding: 2.5% 2.5%;
+        width: 70%;
+        margin: 2.5% auto;
+        max-height: 50px;
+        border: 2px solid #ffffff15;
+        border-radius: 5px;
+    }
+
+    #promotion + div > div {
+        flex-direction: row;
+        width: 80%;
+    }
+    #promotion + div > div > div {
+        width: 30%;
+    }
+    #promotion + div > div > div + div {
+        width: 70%;
+    }
+    #promotion + div > div > div > div > img,
+    #promotion + div > div > div > div > div > img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 10%;
+        left: 0px !important;
+        top: -50% !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cardBig_services {
+        grid-template-columns: 30% 30% 30%;
+        margin: unset;
+        margin-left: auto;
+    }
+}

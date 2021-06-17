@@ -1,0 +1,30 @@
+/* All Navbar Related Classes */
+.navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgba(20, 20, 20, 0.85);
+    color: white;
+    height: var(--navbar-height);
+    height: 100%;
+    padding: 10px;
+    z-index: 100;
+}
+
+.list {
+    display: inline-flex;
+    align-items: center;
+    margin: auto 0 auto 4.5vw;
+    width: 90vw;
+    text-align: center;
+}
+.list li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.listright {
+    margin-left: auto;
+}

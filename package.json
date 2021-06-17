@@ -1,0 +1,45 @@
+{
+    "name": "kingsley",
+    "version": "0.1.0",
+    "browserslist": " >0.75%, not ie 11, not UCAndroid >0, not OperaMini all",
+    "private": true,
+    "husky": {
+        "hooks": {
+            "pre-commit": "npx lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx}": "eslint --fix -f mo",
+        "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
+    },
+    "scripts": {
+        "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint ./**/**.{js,jsx} --fix -f mo"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "framer-motion": "^4.1.17",
+        "next": "^11.0.0",
+        "next-i18next": "^8.4.0",
+        "next-pwa": "^5.2.21",
+        "prop-types": "^15.7.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "eslint": "^7.28.0",
+        "eslint-config-next": "^11.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-formatter-mo": "^1.0.1",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "husky": "4.3.8",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.3.1"
+    }
+}
