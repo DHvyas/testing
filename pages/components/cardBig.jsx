@@ -4,6 +4,7 @@ import Link from 'next/link';
 export default function CardBig(props) {
     return (
         <>
+        {props.prod && (
             <div>
                 {props.prods.map((prods, id) => (
                     <div key={id} className='cardBig'>
@@ -61,6 +62,7 @@ export default function CardBig(props) {
                     </div>
                 ))}
             </div>
+        )}
         </>
     );
 }

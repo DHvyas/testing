@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 export default function Card(props) {
     return (
+        <>
+        {props.prod&& (
         <div>
             {props.prods.map((prods, id) => (
                 <div key={id} className='herodiv'>
@@ -21,5 +23,7 @@ export default function Card(props) {
                 </div>
             ))}
         </div>
+        )}
+        </>
     );
 }
